@@ -1,219 +1,73 @@
 # Smart Diet & Fitness Predictor
 
-A **machine learning powered Streamlit web application** that predicts **daily calories burned** based on lifestyle and fitness data such as age, BMI, and workout activity.
+A Streamlit app that predicts daily calorie burn from lifestyle and workout habits.
 
-This project demonstrates a **complete machine learning workflow**, from data analysis and model training to deploying an interactive web application.
+## 🚀 Features
 
----
+- **Calorie Prediction** – Estimate daily calories burned using age, BMI, activity, and workout data.
+- **Interactive Dashboard** – Clean UI built with Streamlit.
+- **Personalized Insights** – Practical tips based on your activity level.
+- **Visual Analytics** – Charts and breakdowns to help you understand the results.
 
-## Project Overview
-
-The Smart Diet & Fitness Predictor uses a **Random Forest Regression model** trained on fitness-related features to estimate how many calories a person burns daily.
-
-Users can input their fitness data through an interactive **Streamlit interface**, and the model returns an estimated calorie burn.
-
-This project was built to practice:
-
-* Machine learning model development
-* Data preprocessing and feature engineering
-* Model evaluation
-* Building ML-powered web applications
-* Version control with Git and GitHub
-
----
-
-## Features
-
-* Predict daily calories burned using a trained ML model
-* Interactive Streamlit web interface
-* Random Forest regression model
-* Data preprocessing and feature encoding
-* Simple and user-friendly UI
-
----
-
-## Tech Stack
-
-**Programming Language**
-
-* Python
-
-**Libraries**
-
-* scikit-learn
-* pandas
-* numpy
-* matplotlib
-* seaborn
-* streamlit
-
-**Tools**
-
-* Git
-* GitHub
-* VS Code
-
----
-
-## Machine Learning Workflow
-
-The project follows a standard machine learning pipeline:
-
-Data Collection
-↓
-Exploratory Data Analysis
-↓
-Data Cleaning & Preprocessing
-↓
-Feature Engineering
-↓
-Model Training
-↓
-Model Evaluation
-↓
-Model Serialization
-↓
-Streamlit Web Application
-
----
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 smart-diet-fitness-predictor
-│
-├── app.py                 # Streamlit web application
-├── requirements.txt       # Project dependencies
-├── README.md              # Project documentation
-│
-├── notebooks
-│   └── exploration.ipynb  # Data analysis and model training
-│
-├── data
-│   └── calories.csv       # Training dataset
-│
-├── model
-│   └── calorie_model.pkl  # Trained ML model (generated locally)
+├── app.py
+├── requirements.txt
+├── README.md
+├── data/
+│   └── calories.csv
+├── model/
+│   └── calorie_model.pkl
+└── notebooks/
+    └── exploration.ipynb
 ```
 
----
+## 🛠️ Setup
 
-## Installation
+### 1) Clone the repository
 
-### 1. Clone the repository
-
-```
+```bash
 git clone https://github.com/darkacer211/smart-diet-fitness-predictor.git
 cd smart-diet-fitness-predictor
 ```
 
-### 2. Create a virtual environment
+### 2) Create a virtual environment
 
-```
+```bash
 python -m venv venv
 ```
 
-Activate the environment
+Activate it:
 
-Windows:
+- **Windows:** `venv\Scripts\activate`
+- **macOS / Linux:** `source venv/bin/activate`
 
-```
-venv\Scripts\activate
-```
+### 3) Install dependencies
 
-Mac/Linux:
-
-```
-source venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```
+```bash
 pip install -r requirements.txt
 ```
 
----
+## ▶️ Run the App
 
-## Running the Application
-
-Run the Streamlit app:
-
-```
+```bash
 streamlit run app.py
 ```
 
-The application will open in your browser at:
+Then open:
 
 ```
 http://localhost:8501
 ```
 
----
+## 🧠 Model Details
 
-## Model Information
+- **Algorithm:** Random Forest Regressor
+- **Inputs:** Age, BMI, Active Hours, Workout Hours, Gender, Workout Type
+- **Output:** Estimated daily calories burned
 
-The machine learning model used in this project:
+## ⚠️ Disclaimer
 
-**Random Forest Regressor**
-
-The model was trained using the following features:
-
-* Age
-* BMI
-* Active hours
-* Workout hours
-* Gender
-* Workout type
-
-The model predicts:
-
-**Estimated calories burned per day**
-
----
-
-## Example Input
-
-```
-Age: 25
-BMI: 22
-Active Hours: 5
-Workout Hours: 1
-Gender: Male
-Workout Type: Cardio
-```
-
-Example Output:
-
-```
-Estimated Calories Burned: 1850 kcal
-```
-
----
-
-## Future Improvements
-
-Possible enhancements for this project:
-
-* Add diet recommendations based on calorie prediction
-* Include protein and macronutrient suggestions
-* Deploy the app online using Streamlit Cloud
-* Improve model accuracy with additional datasets
-* Add more health metrics
-
----
-
-## Disclaimer
-
-This project is for **educational purposes only** and should not replace professional medical or nutritional advice.
-
----
-
-## Author
-
-**Atharwa Suryakant Shriramwar**
-
-Electronics & Telecommunications student interested in Machine Learning and AI applications.
-
-GitHub:
-https://github.com/darkacer211
+This tool is for educational purposes only and should not replace professional medical advice.
