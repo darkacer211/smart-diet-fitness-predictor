@@ -174,3 +174,5 @@ logs/
 # *.pkl
 # *.joblib
 # *.h5
+
+model/*.pkl
