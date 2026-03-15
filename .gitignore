@@ -169,10 +169,8 @@ logs/
 *.sqlite
 *.sqlite3
 
-# Model files (uncomment if models are large and should be generated)
-# model/
-# *.pkl
-# *.joblib
-# *.h5
+model/
+*.pkl
+*.joblib
+*.h5
 
-model/*.pkl
